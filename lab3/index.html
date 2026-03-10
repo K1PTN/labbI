@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platformer Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div id="ui-overlay">
+            <div id="score-display">Очки: <span id="score">0</span></div>
+            <div id="health-display">❤️ <span id="health">3</span></div>
+            <div id="level-display">Уровень: <span id="level">1</span></div>
+        </div>
+        
+        <div id="menu-overlay">
+            <h1>🎮 Platformer</h1>
+            <button id="start-btn">Начать игру</button>
+            <button id="pause-btn" style="display: none;">Пауза</button>
+            <button id="restart-btn" style="display: none;">Заново</button>
+            <div id="game-message" style="display: none;"></div>
+            <div class="controls-hint">
+                ← → или A D — движение | Space / W / ↑ — прыжок | P — пауза
+            </div>
+        </div>
+    </div>
+
+    <script src="js/InputHandler.js"></script>
+    <script src="js/Collision.js"></script>
+    <script src="js/Platform.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Renderer.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
